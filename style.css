@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family:'Tauri-Regular' ;
+  src: url('../fontes/Tauri-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+:root {
+  --font-destaque: 'Tauri-Regular';
+
+  --cor0: #17446E;  
+  --cor2: #6A98C3;
+  --cor3: #b0d3f3a2;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  font-family: var(--font-destaque) ;
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #153757;
+  min-height: 150px;
+  text-align: center;
+  padding-top: 40px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+}
+
+h2, h3 {
+  font-family: var(--font-destaque);
+  color: var(--cor0);
+  font-size: 1.3em;
+  font-weight: normal;
+  background-image: linear-gradient(to right, #b0d3f3, transparent);
+}
+
+main {
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(226, 230, 240, 0.705);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+body {
+  background-color: var(--cor3);
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+  min-height: 150px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+nav {
+  background-color: var(--cor0);
+  padding: 10px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.24);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav > a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+nav > a:hover {
+  background-color: var(--cor3);
+  color: var(--cor5);
+}
+
+aside > h3 {
+  margin: 10px;
+}
+
+aside > li {
+  margin: 5px;
+  padding: 7px;
+  text-align: justify;
+  list-style-position: inside;
+}
+
+footer {
+  background-color: var(--cor0);
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 5px;
+  
+}
+
+footer a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #bedbf5;
+}
